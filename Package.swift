@@ -1,9 +1,11 @@
+// swift-tools-version:5.3
 import PackageDescription
 
-let package = Package(
+let package: Package  = Package(
     name: "CAiger",
+        products: [],
     targets: [
-        Target(name: "CAiger"),
-        Target(name: "CAigerHelper", dependencies:["CAiger"]),
+        .target(name: "CAiger", dependencies: []),
+        .target(name: "CAigerHelper", dependencies:["CAiger"]),
     ]
 )
