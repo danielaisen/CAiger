@@ -7,5 +7,8 @@ let package: Package  = Package(
     targets: [
         .target(name: "CAiger", dependencies: []),
         .target(name: "CAigerHelper", dependencies:["CAiger"]),
+        .testTarget(
+            name: "CAigerTests", 
+            dependencies: ["CAiger"])
     ]
 )
