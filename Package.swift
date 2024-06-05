@@ -3,7 +3,9 @@ import PackageDescription
 
 let package: Package  = Package(
     name: "CAiger",
-        products: [ .library(name: "CAiger", targets: ["CAiger"]),],
+        products: [ 
+            .library(name: "CAiger", targets: ["CAiger"]),
+            .library(name: "CAigerHelper", targets: ["CAigerHelper"]),],
     targets: [
         .target(
             name: "CAiger", 
